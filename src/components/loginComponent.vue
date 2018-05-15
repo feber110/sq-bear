@@ -38,13 +38,7 @@ export default {
   },
   methods: {
     handleSubmit () {
-      // axios.get('////')
-      // .then(function (response) {
-      //   console.log(response);
-      // })
-      // .catch(function (error) {
-      //   console.log(error);
-      // });
+      alert(this.formItem.account+this.formItem.password)
 
     }
   }
