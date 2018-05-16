@@ -49,7 +49,7 @@ export default {
           lastDay: 232
         }
       },
-      data: [{name:'待办事项',id: 1},{name:'同城企业',id: 2},{name:'种子商户',id: 3}]
+      data: [{name:'待办事项',id: 1},{name:'同城企业',id: 2},{name:'种子商户',id: 3},{name:'待办事项',id: 1},{name:'同城企业',id: 2}]
     }
   },
   methods: {

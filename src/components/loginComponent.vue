@@ -21,7 +21,7 @@
       <Col span="24" right>忘记密码?</Col>
       <Col span="24">
         <FormItem>
-          <Button type="success" shape="circle" size='large'  @click="handleLogin">登录</Button>
+          <Button type="success" shape="circle" size='large'   @click="handleLogin">登录</Button>
         </FormItem>
       </Col>
       <Col span="24">
