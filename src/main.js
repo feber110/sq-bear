@@ -6,13 +6,16 @@ import router from './router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import axios from 'axios'
+import VueCookie from 'vue-cookie'
 Vue.config.productionTip = false
 Vue.use(iView)
-Vue.use(axios)
+Vue.use(VueCookie)
+Vue.prototype.axios = axios
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  axios,
   components: { App },
   template: '<App/>'
 })
