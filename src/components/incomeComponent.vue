@@ -19,9 +19,10 @@
       <!--<Button type="success" size="large" style="width:100%" class="buttonstyle" @click="toSpecialOrder">特色分享商户订单</Button>-->
       <!--<Button tyoe="success" size="large" style="width:100%" class="buttonstyle" @click="toCustomerOrder">消费者订单</Button>-->
     <!--</Col>-->
-    <Tabs type="card">
+    <Col class="demo-tabs-style1">
+      <Tabs type="card">
       <TabPane label="7日">
-        <Button type="dashed" size="large" long class="buttonstyle" @click="toSeedOrder">
+        <Button type="success" size="large" long class="buttonstyle" @click="toSeedOrder">
           <Col span="24">
             <Col span="4">
               种子商户订单
@@ -34,7 +35,7 @@
             </Col>
           </Col>
         </Button>
-        <Button tyoe="dashed" size="large" long class="buttonstyle" @click="toCityOrder">
+        <Button tyoe="success" size="large" long class="buttonstyle" @click="toCityOrder">
           <Col span="24">
             <Col span="4">
               同城企业订单
@@ -47,7 +48,7 @@
             </Col>
           </Col>
         </Button>
-        <Button type="dashed" size="large" long class="buttonstyle" @click="toSpecialOrder">
+        <Button type="success" size="large" long class="buttonstyle" @click="toSpecialOrder">
           <Col span="24">
             <Col span="4">
               特色分享商户订单
@@ -60,7 +61,7 @@
             </Col>
           </Col>
         </Button>
-        <Button tyoe="dashed" size="large" long class="buttonstyle" @click="toCustomerOrder">
+        <Button tyoe="success" size="large" long class="buttonstyle" @click="toCustomerOrder">
           <Col span="24">
             <Col span="4">
               消费者订单
@@ -75,7 +76,7 @@
         </Button>
       </TabPane>
       <TabPane label="30日">
-        <Button type="dashed" size="large" long class="buttonstyle" @click="toSeedOrder">
+        <Button type="success" size="large" long class="buttonstyle" @click="toSeedOrder">
           <Col span="24">
             <Col span="4">
               种子商户订单
@@ -88,7 +89,7 @@
             </Col>
           </Col>
         </Button>
-        <Button tyoe="dashed" size="large" long class="buttonstyle" @click="toCityOrder">
+        <Button tyoe="success" size="large" long class="buttonstyle" @click="toCityOrder">
           <Col span="24">
             <Col span="4">
               同城企业订单
@@ -101,7 +102,7 @@
             </Col>
           </Col>
         </Button>
-        <Button type="dashed" size="large" long class="buttonstyle" @click="toSpecialOrder">
+        <Button type="success" size="large" long class="buttonstyle" @click="toSpecialOrder">
           <Col span="24">
             <Col span="4">
               特色分享商户订单
@@ -114,7 +115,7 @@
             </Col>
           </Col>
         </Button>
-        <Button tyoe="dashed" size="large" long class="buttonstyle" @click="toCustomerOrder">
+        <Button tyoe="success" size="large" long class="buttonstyle" @click="toCustomerOrder">
           <Col span="24">
             <Col span="4">
               消费者订单
@@ -129,6 +130,7 @@
         </Button>
       </TabPane>
     </Tabs>
+    </Col>
   </row>
 </template>
 
@@ -154,15 +156,21 @@
     }
 </script>
 
-<style scoped>
+<style>
   .buttonstyle{
     color: black;
     background-color: white;
-    /*border-color: green;*/
+    border-color: black;
     -webkit-border-radius: 0px;
   }
 
   .title{
     font-size: 25px;
   }
+
+  .demo-tabs-style1 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
+    border-color: transparent;
+    width:160%;
+  }
 </style>
+

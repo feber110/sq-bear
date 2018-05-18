@@ -1,7 +1,7 @@
 <template>
   <row style="max-width: 680px;">
     <Col>英雄榜</Col>
-    <Col span="24">
+    <Col span="24" class="demo-tabs-style1">
       <Tabs type="card">
         <TabPane label="同城企业">
           <Button type="success" size="large" style="width:100%" class="buttonstyle">
@@ -102,7 +102,7 @@
   }
 </script>
 
-<style scoped>
+<style>
   .buttonstyle{
     color: black;
     background-color: white;
@@ -113,5 +113,10 @@
 
   .title2{
     color:gray;
+  }
+
+  .demo-tabs-style1 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
+    border-color: transparent;
+    width:32%;
   }
 </style>

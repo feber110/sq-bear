@@ -11,7 +11,7 @@
         <span>您一共有123种子商户订单，一共产生256次订单</span>
       </Col>
     </col>
-    <Col span="24">
+    <Col span="24" class="demo-tabs-style1">
       <Tabs type="card">
         <TabPane label="已完成">
           <Button type="success" size="large" style="width:100%" class="buttonstyle">
@@ -99,33 +99,7 @@
       <!--<Button tyoe="success" size="large" style="width:30%">待评价</Button>-->
       <!--<Button tyoe="success" size="large" style="width:30%">已取消</Button>-->
     </Col>
-    <!--<Col span="24">-->
-      <!--<Button type="success" size="large" style="width:100%" class="buttonstyle">-->
-        <!--<Col span="24">-->
-          <!--<Col span="4">-->
-            <!--<img src=".././assets/logo.png" width="40px"> </img>-->
 
-          <!--</Col>-->
-          <!--<Col span="4">-->
-            <!--<Col span="24">-->
-              <!--美发-->
-            <!--</Col>-->
-            <!--<Col span="24" class="title2">-->
-              <!--西溪银泰-->
-            <!--</Col>-->
-          <!--</Col>-->
-          <!--<Col span="4" offset="12">-->
-            <!--<Col span="24" class="title2">-->
-              <!--消费-->
-            <!--</Col>-->
-            <!--<Col span="24" class="title2">-->
-              <!--时间-->
-            <!--</Col>-->
-          <!--</Col>-->
-
-        <!--</Col>-->
-      <!--</Button>-->
-    <!--</Col>-->
   </row>
 </template>
 
@@ -135,7 +109,7 @@
     }
 </script>
 
-<style scoped>
+<style>
   .buttonstyle{
     color: black;
     background-color: white;
@@ -149,5 +123,9 @@
   }
   .title{
     font-size: 25px;
+  }
+  .demo-tabs-style1 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
+    border-color: transparent;
+    width:55%;
   }
 </style>
