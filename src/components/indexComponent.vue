@@ -1,5 +1,5 @@
 <template>
-  <Row>
+  <Row style="max-width: 680px;">
     <Col>首页</Col>
     <Row>
       <Col span="4"><img src=".././assets/logo.png" width="70px"></Col>
@@ -11,7 +11,7 @@
     <Row>
       <Col span="16">
         <Col span="12">
-          <span>一共收益:{{ user.income.sum }}</span><br>  
+          <span>一共收益:{{ user.income.sum }}</span><br>
           <span>今日收益:{{ user.income.today }}</span>
         </Col>
         <Col span="12">
@@ -53,7 +53,7 @@ export default {
     }
   },
   methods: {
-    
+
   }
 }
 </script>

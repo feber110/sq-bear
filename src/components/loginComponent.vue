@@ -1,5 +1,5 @@
 <template>
-  <Row>
+  <Row style="max-width: 680px;">
     <img src=".././assets/logo.png">
     <Col span="24">{{ desc }}</Col>
     <Col span="24"><span>推广员中心</span></Col>

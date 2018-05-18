@@ -1,5 +1,5 @@
 <template>
-  <row>
+  <row  style="max-width: 680px;">
     <Col>审批详情</Col>
     <col>
     <Input type="text" placeholder="搜索">
@@ -51,8 +51,8 @@
     color: black;
     background-color: white;
     border-color: gray;
-    text-align: left;
-    border-radius: 0px;
+    -webkit-text-align: left;
+    -webkit-border-radius: 0px;
   }
 
   .title2{

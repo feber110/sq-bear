@@ -1,5 +1,5 @@
 <template>
-  <row>
+  <row style="max-width: 680px;">
     <col>
     同城企业列表
     </col>
@@ -47,7 +47,7 @@
     color: black;
     background-color: white;
     border-color: gray;
-    text-align: left;
-    border-radius: 0px;
+    -webkit-text-align: left;
+    -webkit-border-radius: 0px;
   }
 </style>

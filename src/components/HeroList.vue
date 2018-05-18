@@ -1,5 +1,5 @@
 <template>
-  <row>
+  <row style="max-width: 680px;">
     <Col>英雄榜</Col>
     <Col span="24">
       <Button type="success" size="large" style="width:24%">同城企业</Button>
@@ -42,8 +42,8 @@
     color: black;
     background-color: white;
     border-color: gray;
-    text-align: left;
-    border-radius: 0px;
+    -webkit-text-align: left;
+    -webkit-border-radius: 0px;
   }
 
   .title2{

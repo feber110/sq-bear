@@ -4,16 +4,16 @@ import VueCookie from 'vue-cookie'
 import loginComponent from '@/components/loginComponent'
 import indexComponent from '@/components/indexComponent'
 import incomeComponent from '@/components/incomeComponent'
-import SeedOrder from '@/components/SeedOrder'
-import CityOrder from '@/components/CityOrder'
-import SpecialOrder from '@/components/SpecialOrder'
-import CustomerOrder from '@/components/CustomerOrder'
-import CityList from '@/components/CityList'
-import CustomerList from '@/components/CustomerList'
-import SpecialList from '@/components/SpecialList'
-import TodoList from '@/components/TodoList'
-import HeroList from '@/components/HeroList'
-import ApprovalDetail from '@/components/ApprovalDetail'
+import seedOrder from '@/components/seedOrder'
+import cityOrder from '@/components/cityOrder'
+import specialOrder from '@/components/specialOrder'
+import customerOrder from '@/components/customerOrder'
+import cityList from '@/components/cityList'
+import customerList from '@/components/customerList'
+import specialList from '@/components/specialList'
+import todoList from '@/components/todoList'
+import heroList from '@/components/heroList'
+import approvalDetail from '@/components/approvalDetail'
 
     Vue.use(Router)
     Vue.use(VueCookie)
@@ -42,54 +42,54 @@ import ApprovalDetail from '@/components/ApprovalDetail'
       },
       {
         path: '/seedorder',
-        name: 'SeedOrder',
-        component: SeedOrder,
+        name: 'seedOrder',
+        component: seedOrder,
       },
       {
         path: '/cityorder',
-        name: 'CityOrder',
-        component: CityOrder,
+        name: 'cityOrder',
+        component: cityOrder,
       },
       {
         path: '/specialorder',
-        name: 'SpecialOrder',
-        component: SpecialOrder,
+        name: 'specialOrder',
+        component: specialOrder,
       },
       {
         path: '/customerorder',
-        name: 'CustomerOrder',
-        component: CustomerOrder,
+        name: 'customerOrder',
+        component: customerOrder,
       },
       {
         path: '/citylist',
-        name: 'CityList',
-        component: CityList,
+        name: 'cityList',
+        component: cityList,
       },
       {
         path: '/customerlist',
-        name: 'CustomerList',
-        component: CustomerList,
+        name: 'customerList',
+        component: customerList,
       },
       {
         path: '/speciallist',
-        name: 'SpecialList',
-        component: SpecialList,
+        name: 'specialList',
+        component: specialList,
       }
       ,
       {
         path: '/todolist',
-        name: 'TodoList',
-        component: TodoList,
+        name: 'todoList',
+        component: todoList,
       },
       {
         path: '/herolist',
-        name: 'HeroList',
-        component: HeroList,
+        name: 'heroList',
+        component: heroList,
       },
       {
         path:'/approvaldetail',
-        name:'ApprovalDetail',
-        component:ApprovalDetail,
+        name:'approvalDetail',
+        component:approvalDetail,
       }
   ],
 
