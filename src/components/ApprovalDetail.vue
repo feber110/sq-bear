@@ -9,33 +9,83 @@
     </Col>
     </col>
     <Col span="24">
-      <Button type="success" size="large" style="width:30%">种子商户</Button>
-      <Button tyoe="success" size="large" style="width:30%">特色分享商户</Button>
-      <Button tyoe="success" size="large" style="width:30%">同城企业</Button>
-    </Col>
-    <Col span="24">
-      <Button type="success" size="large" style="width:100%" class="buttonstyle">
-        <Col span="24">
-          <Col span="4">
-            <img src=".././assets/logo.png" width="40px"> </img>
-
-          </Col>
-          <Col span="4">
+      <Tabs type="card">
+        <TabPane label="种子商户">
+          <Button type="success" size="large" style="width:100%" class="buttonstyle">
             <Col span="24">
-              港式茶餐厅
-            </Col>
-            <Col span="24" class="title2">
-              申请时间：2018-05-14
-            </Col>
-          </Col>
-          <Col span="4" offset="12">
-            <Col span="24" class="title2">
-              待审批
-            </Col>
-          </Col>
+              <Col span="4">
+                <img src=".././assets/logo.png" width="40px"> </img>
 
-        </Col>
-      </Button>
+              </Col>
+              <Col span="4">
+                <Col span="24">
+                  港式茶餐厅
+                </Col>
+                <Col span="24" class="title2">
+                  申请时间：2018-05-14
+                </Col>
+              </Col>
+              <Col span="4" offset="12">
+                <Col span="24" class="title2">
+                  待审批
+                </Col>
+              </Col>
+
+            </Col>
+          </Button>
+        </TabPane>
+        <TabPane label="特色分享商户">
+          <Button type="success" size="large" style="width:100%" class="buttonstyle">
+            <Col span="24">
+              <Col span="4">
+                <img src=".././assets/logo.png" width="40px"> </img>
+
+              </Col>
+              <Col span="4">
+                <Col span="24">
+                  港式茶餐厅
+                </Col>
+                <Col span="24" class="title2">
+                  申请时间：2018-05-14
+                </Col>
+              </Col>
+              <Col span="4" offset="12">
+                <Col span="24" class="title2">
+                  待审批
+                </Col>
+              </Col>
+
+            </Col>
+          </Button>
+        </TabPane>
+        <TabPane label="同城企业">
+          <Button type="success" size="large" style="width:100%" class="buttonstyle">
+            <Col span="24">
+              <Col span="4">
+                <img src=".././assets/logo.png" width="40px"> </img>
+
+              </Col>
+              <Col span="4">
+                <Col span="24">
+                  港式茶餐厅
+                </Col>
+                <Col span="24" class="title2">
+                  申请时间：2018-05-14
+                </Col>
+              </Col>
+              <Col span="4" offset="12">
+                <Col span="24" class="title2">
+                  待审批
+                </Col>
+              </Col>
+
+            </Col>
+          </Button>
+        </TabPane>
+      </Tabs>
+      <!--<Button type="success" size="large" style="width:30%">种子商户</Button>-->
+      <!--<Button tyoe="success" size="large" style="width:30%">特色分享商户</Button>-->
+      <!--<Button tyoe="success" size="large" style="width:30%">同城企业</Button>-->
     </Col>
   </row>
 </template>

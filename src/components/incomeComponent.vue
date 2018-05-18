@@ -1,6 +1,6 @@
 <template>
   <row style="max-width: 680px;">
-    <Col>收益详情</Col>
+    <Col class="title">收益详情</Col>
     <Row>
       <Col span="6"><img src=".././assets/logo.png" width="70px"></Col>
       <Col span="18">
@@ -160,5 +160,9 @@
     background-color: white;
     /*border-color: green;*/
     -webkit-border-radius: 0px;
+  }
+
+  .title{
+    font-size: 25px;
   }
 </style>
