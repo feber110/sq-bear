@@ -148,7 +148,6 @@
   }
 
   .demo-tabs-style1 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
-    border-color: transparent;
     width:50%;
   }
 </style>

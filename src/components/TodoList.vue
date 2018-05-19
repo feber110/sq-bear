@@ -50,7 +50,7 @@
     color: black;
     background-color: white;
     border-color: gray;
-    -webkit-text-align: left;
+    text-align: left;
     -webkit-border-radius: 0px;
   }
 </style>

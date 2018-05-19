@@ -22,112 +22,38 @@
     <Col class="demo-tabs-style1">
       <Tabs type="card">
       <TabPane label="7日">
-        <Button type="success" size="large" long class="buttonstyle" @click="toSeedOrder">
+        <Col v-for="(item,index) in data">
+          <Button type="success" size="large" long class="buttonstyle" >
           <Col span="24">
             <Col span="4">
-              种子商户订单
+              {{item.name}}
             </Col>
             <Col span="2" offset="16">
-              {{week.seedorder}}
+              {{item.number}}
             </Col>
             <Col span="2">
               <img src=".././assets/logo.png" width="20px" />
             </Col>
           </Col>
         </Button>
-        <Button tyoe="success" size="large" long class="buttonstyle" @click="toCityOrder">
-          <Col span="24">
-            <Col span="4">
-              同城企业订单
-            </Col>
-            <Col span="2" offset="16">
-              {{week.cityorder}}
-            </Col>
-            <Col span="2">
-              <img src=".././assets/logo.png" width="20px" />
-            </Col>
-          </Col>
-        </Button>
-        <Button type="success" size="large" long class="buttonstyle" @click="toSpecialOrder">
-          <Col span="24">
-            <Col span="4">
-              特色分享商户订单
-            </Col>
-            <Col span="2" offset="16">
-              {{week.specialorder}}
-            </Col>
-            <Col span="2">
-              <img src=".././assets/logo.png" width="20px" />
-            </Col>
-          </Col>
-        </Button>
-        <Button tyoe="success" size="large" long class="buttonstyle" @click="toCustomerOrder">
-          <Col span="24">
-            <Col span="4">
-              消费者订单
-            </Col>
-            <Col span="2" offset="16">
-              {{week.customerorder}}
-            </Col>
-            <Col span="2">
-              <img src=".././assets/logo.png" width="20px" />
-            </Col>
-          </Col>
-        </Button>
+        </Col>
       </TabPane>
       <TabPane label="30日">
-        <Button type="success" size="large" long class="buttonstyle" @click="toSeedOrder">
-          <Col span="24">
-            <Col span="4">
-              种子商户订单
+        <Col v-for="(item,index) in data">
+          <Button type="success" size="large" long class="buttonstyle">
+            <Col span="24">
+              <Col span="4">
+                {{item.name}}
+              </Col>
+              <Col span="2" offset="16">
+                {{item.number}}
+              </Col>
+              <Col span="2">
+                <img src=".././assets/logo.png" width="20px" />
+              </Col>
             </Col>
-            <Col span="2" offset="16">
-              {{month.seedorder}}
-            </Col>
-            <Col span="2">
-              <img src=".././assets/logo.png" width="20px" />
-            </Col>
-          </Col>
-        </Button>
-        <Button tyoe="success" size="large" long class="buttonstyle" @click="toCityOrder">
-          <Col span="24">
-            <Col span="4">
-              同城企业订单
-            </Col>
-            <Col span="2" offset="16">
-              {{month.cityorder}}
-            </Col>
-            <Col span="2">
-              <img src=".././assets/logo.png" width="20px" />
-            </Col>
-          </Col>
-        </Button>
-        <Button type="success" size="large" long class="buttonstyle" @click="toSpecialOrder">
-          <Col span="24">
-            <Col span="4">
-              特色分享商户订单
-            </Col>
-            <Col span="2" offset="16">
-              {{month.specialorder}}
-            </Col>
-            <Col span="2">
-              <img src=".././assets/logo.png" width="20px" />
-            </Col>
-          </Col>
-        </Button>
-        <Button tyoe="success" size="large" long class="buttonstyle" @click="toCustomerOrder">
-          <Col span="24">
-            <Col span="4">
-              消费者订单
-            </Col>
-            <Col span="2" offset="16">
-              {{month.customerorder}}
-            </Col>
-            <Col span="2">
-              <img src=".././assets/logo.png" width="20px" />
-            </Col>
-          </Col>
-        </Button>
+          </Button>
+        </Col>
       </TabPane>
     </Tabs>
     </Col>
@@ -145,35 +71,17 @@
             name: '张三',
             income: '$12000'
           },
-          week: {
-            seedorder: 15,
-            cityorder: 20,
-            specialorder: 25,
-            customerorder: 30,
-          },
-          month: {
-            seedorder: 15,
-            cityorder: 20,
-            specialorder: 25,
-            customerorder: 30,
-          }
+          data:[
+            {name:'种子商户订单',number:30},
+            {name:'同城企业订单',number:14},
+            {name:'特色分享商户订单',number:32},
+            {name:'消费者订单',number:76},
+          ]
         }
       }
-
       ,
       methods:{
-        toSeedOrder(){
-          this.$router.push('/seedOrder');
-        },
-        toCityOrder(){
-          this.$router.push('/cityOrder');
-        },
-        toSpecialOrder(){
-          this.$router.push('/specialOrder');
-        },
-        toCustomerOrder(){
-          this.$router.push('/customerOrder');
-        },
+
       }
     }
 </script>
