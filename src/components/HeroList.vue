@@ -4,6 +4,7 @@
     <Col span="24" class="demo-tabs-style1">
       <Tabs type="card">
         <TabPane label="同城企业">
+          <Col v-for="(item,index) in topcompany">
           <Button type="success" size="large" style="width:100%" class="buttonstyle">
             <Col span="24">
               <Col span="4">
@@ -12,19 +13,21 @@
               </Col>
               <Col span="4">
                 <Col span="24">
-                  张三
+                  {{item.name}}
                 </Col>
               </Col>
               <Col span="4" offset="12">
                 <Col span="24" class="title2">
-                  50
+                  {{item.number}}
                 </Col>
               </Col>
 
             </Col>
           </Button>
+          </Col>
         </TabPane>
         <TabPane label="商户">
+          <Col v-for="(item,index) in topshop">
           <Button type="success" size="large" style="width:100%" class="buttonstyle">
             <Col span="24">
               <Col span="4">
@@ -33,19 +36,21 @@
               </Col>
               <Col span="4">
                 <Col span="24">
-                  张三
+                  {{item.name}}
                 </Col>
               </Col>
               <Col span="4" offset="12">
                 <Col span="24" class="title2">
-                  50
+                  {{item.number}}
                 </Col>
               </Col>
 
             </Col>
           </Button>
+          </Col>
         </TabPane>
         <TabPane label="消费者">
+          <Col v-for="(item,index) in topcustomer" >
           <Button type="success" size="large" style="width:100%" class="buttonstyle">
             <Col span="24">
               <Col span="4">
@@ -54,19 +59,21 @@
               </Col>
               <Col span="4">
                 <Col span="24">
-                  张三
+                  {{item.name}}
                 </Col>
               </Col>
               <Col span="4" offset="12">
                 <Col span="24" class="title2">
-                  50
+                  {{item.number}}
                 </Col>
               </Col>
 
             </Col>
           </Button>
+          </Col>
         </TabPane>
         <TabPane label="收入">
+          <Col v-for="(item,index) in topincome">
           <Button type="success" size="large" style="width:100%" class="buttonstyle">
             <Col span="24">
               <Col span="4">
@@ -75,17 +82,18 @@
               </Col>
               <Col span="4">
                 <Col span="24">
-                  张三
+                  {{item.name}}
                 </Col>
               </Col>
               <Col span="4" offset="12">
                 <Col span="24" class="title2">
-                  50
+                  {{item.number}}
                 </Col>
               </Col>
 
             </Col>
           </Button>
+          </Col>
         </TabPane>
       </Tabs>
       <!--<Button type="success" size="large" style="width:24%">同城企业</Button>-->
@@ -98,7 +106,31 @@
 
 <script>
   export default {
-    name: "HeroList"
+    name: "HeroList",
+    data(){
+      return {
+        topcompany:[
+          {name:'Tom',number:50},
+          {name:'Amy',number:50},
+          {name:'John',number:50},
+        ],
+        topshop:[
+          {name:'Tom',number:50},
+          {name:'Amy',number:50},
+          {name:'John',number:50},
+        ],
+        topcustomer:[
+          {name:'Tom',number:50},
+          {name:'Amy',number:50},
+          {name:'John',number:50},
+        ],
+        topincome:[
+          {name:'Tom',number:50},
+          {name:'Amy',number:50},
+          {name:'John',number:50},
+        ],
+      }
+    }
   }
 </script>
 

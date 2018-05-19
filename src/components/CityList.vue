@@ -4,11 +4,11 @@
     同城企业列表
     </col>
     <Col span="24" style="text-align: left;">
-      <span>尊敬的推广员张三：</span>
+      <span>尊敬的推广员：{{user.name}}</span>
       <br>
-      <span>您一共发展了25家同城企业</span>
+      <span>您一共发展了{{companynumber}}家同城企业</span>
     </Col>
-    <Col span="24">
+    <Col span="24" v-for="(item,index) in itemdata">
       <Button type="success" size="large" style="width:100%" class="buttonstyle">
         <Col span="24">
           <Col span="4">
@@ -17,15 +17,15 @@
           </Col>
           <Col span="4">
             <Col span="24">
-              韩都衣舍
+              {{item.name}}
             </Col>
           </Col>
           <Col span="4" offset="12">
             <Col span="24">
-              订单25
+              订单:{{item.price}}
             </Col>
             <Col span="24" >
-              收益：￥23.6
+              收益:{{item.income}}
             </Col>
           </Col>
 
@@ -38,7 +38,18 @@
 
 <script>
   export default {
-    name: "CityList"
+    name: "CityList",
+    data(){
+      return {
+        user:{
+          name:'Tom',
+        },
+        companynumber:100,
+        itemdata:[
+          {name:'韩都衣舍',price:200,income:100}
+        ]
+      }
+    }
   }
 </script>
 

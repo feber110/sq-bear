@@ -4,23 +4,23 @@
     代办事项
     </col>
     <Col span="24" style="text-align: left;">
-      <span>您有5个代办事项</span>
+      <span>您有{{todonumber}}}个代办事项</span>
     </Col>
-    <Col span="24">
+    <Col span="24" v-for="(item,index) in tododata">
       <Button type="success" size="large" style="width:100%" class="buttonstyle">
         <Col span="24">
 
           <Col span="4">
             <Col span="24">
-              稍后处理
+              {{item.name}}
             </Col>
             <Col span="24">
-              副标题
+              {{item.subtitle}}
             </Col>
           </Col>
-          <Col span="4" offset="12">
+          <Col span="4" offset="16">
             <Col span="24" >
-              内容文字
+              {{item.content}}
             </Col>
           </Col>
 
@@ -34,6 +34,14 @@
 <script>
   export default {
     name: "TodoList",
+    data(){
+      return {
+        todonumber:20,
+        tododata:[
+          {name:'主标题',subtitle:'副标题',content:'内容'}
+        ]
+      }
+    }
   }
 </script>
 

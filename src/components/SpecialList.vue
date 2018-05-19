@@ -4,11 +4,11 @@
     我推广的特色商户
     </col>
     <Col span="24" style="text-align: left;">
-      <span>尊敬的推广员张三：</span>
+      <span>尊敬的推广员：{{user.name}}</span>
       <br>
-      <span>您一共发展了25家特色商户</span>
+      <span>您一共发展了{{specialorder}}家特色商户</span>
     </Col>
-    <Col span="24">
+    <Col span="24" v-for="(item,index) in specialdata">
       <Button type="success" size="large" style="width:100%" class="buttonstyle">
         <Col span="24">
           <Col span="4">
@@ -17,18 +17,18 @@
           </Col>
           <Col span="4">
             <Col span="24">
-              港式茶餐厅
+              {{item.name}}
             </Col>
             <Col span="24">
-              我的收益
+              我的收益:{{item.income}}
             </Col>
             <Col span="24">
-              ¥200
+              价格:{{item.price}}
             </Col>
           </Col>
           <Col span="4" offset="12">
             <Col span="24" >
-              分享红包
+              分享红包{{item.bonus}}
             </Col>
           </Col>
 
@@ -42,6 +42,18 @@
 <script>
   export default {
     name: "SpecialList",
+    data (){
+      return {
+        user:{
+          name:'张三',
+        },
+        specialorder:200,
+        specialdata: [
+          {name:'港式茶餐厅',income:'$200',price:'$100',bonus:'$200'},
+          {name:'健身房',income:'$220',price:'$140',bonus:'$250'},
+        ]
+      }
+    }
   }
 </script>
 

@@ -4,9 +4,9 @@
     <Row>
       <Col span="6"><img src=".././assets/logo.png" width="70px"></Col>
       <Col span="18">
-        <span>推广员 张三</span>
+        <span>推广员: {{user.name}}</span>
         <br>
-        <span>目前收益</span>
+        <span>目前收益: {{user.income}}</span>
       </Col>
     </Row>
     <!--<Col span="24">-->
@@ -28,7 +28,7 @@
               种子商户订单
             </Col>
             <Col span="2" offset="16">
-              20
+              {{week.seedorder}}
             </Col>
             <Col span="2">
               <img src=".././assets/logo.png" width="20px" />
@@ -41,7 +41,7 @@
               同城企业订单
             </Col>
             <Col span="2" offset="16">
-              20
+              {{week.cityorder}}
             </Col>
             <Col span="2">
               <img src=".././assets/logo.png" width="20px" />
@@ -54,7 +54,7 @@
               特色分享商户订单
             </Col>
             <Col span="2" offset="16">
-              20
+              {{week.specialorder}}
             </Col>
             <Col span="2">
               <img src=".././assets/logo.png" width="20px" />
@@ -67,7 +67,7 @@
               消费者订单
             </Col>
             <Col span="2" offset="16">
-              20
+              {{week.customerorder}}
             </Col>
             <Col span="2">
               <img src=".././assets/logo.png" width="20px" />
@@ -82,7 +82,7 @@
               种子商户订单
             </Col>
             <Col span="2" offset="16">
-              20
+              {{month.seedorder}}
             </Col>
             <Col span="2">
               <img src=".././assets/logo.png" width="20px" />
@@ -95,7 +95,7 @@
               同城企业订单
             </Col>
             <Col span="2" offset="16">
-              20
+              {{month.cityorder}}
             </Col>
             <Col span="2">
               <img src=".././assets/logo.png" width="20px" />
@@ -108,7 +108,7 @@
               特色分享商户订单
             </Col>
             <Col span="2" offset="16">
-              20
+              {{month.specialorder}}
             </Col>
             <Col span="2">
               <img src=".././assets/logo.png" width="20px" />
@@ -121,7 +121,7 @@
               消费者订单
             </Col>
             <Col span="2" offset="16">
-              20
+              {{month.customerorder}}
             </Col>
             <Col span="2">
               <img src=".././assets/logo.png" width="20px" />
@@ -136,21 +136,43 @@
 
 <script>
     import CityList from "./cityList";
-    export default {
-        name: "incomeComponent",
+    export  default {
+      name: "incomeComponent",
       components: {CityList},
+      data () {
+        return {
+          user: {
+            name: '张三',
+            income: '$12000'
+          },
+          week: {
+            seedorder: 15,
+            cityorder: 20,
+            specialorder: 25,
+            customerorder: 30,
+          },
+          month: {
+            seedorder: 15,
+            cityorder: 20,
+            specialorder: 25,
+            customerorder: 30,
+          }
+        }
+      }
+
+      ,
       methods:{
         toSeedOrder(){
-          this.$router.push('/SeedOrder');
+          this.$router.push('/seedOrder');
         },
         toCityOrder(){
-          this.$router.push('/CityOrder');
+          this.$router.push('/cityOrder');
         },
         toSpecialOrder(){
-          this.$router.push('/SpecialOrder');
+          this.$router.push('/specialOrder');
         },
         toCustomerOrder(){
-          this.$router.push('/CustomerOrder');
+          this.$router.push('/customerOrder');
         },
       }
     }
@@ -169,7 +191,6 @@
   }
 
   .demo-tabs-style1 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
-    border-color: transparent;
     width:250%;
   }
 </style>
