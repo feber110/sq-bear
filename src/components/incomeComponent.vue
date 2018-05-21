@@ -23,7 +23,7 @@
       <Tabs type="card">
       <TabPane label="7日">
         <Col v-for="(item,index) in data">
-          <Button type="success" size="large" long class="buttonstyle" >
+          <Button type="success" size="large" long class="buttonstyle" @click="gotopage(item.page)">
           <Col span="24">
             <Col span="4">
               {{item.name}}
@@ -40,7 +40,7 @@
       </TabPane>
       <TabPane label="30日">
         <Col v-for="(item,index) in data">
-          <Button type="success" size="large" long class="buttonstyle">
+          <Button type="success" size="large" long class="buttonstyle" @click="gotopage(item.page)">
             <Col span="24">
               <Col span="4">
                 {{item.name}}
@@ -72,16 +72,19 @@
             income: '$12000'
           },
           data:[
-            {name:'种子商户订单',number:30},
-            {name:'同城企业订单',number:14},
-            {name:'特色分享商户订单',number:32},
-            {name:'消费者订单',number:76},
+            {name:'种子商户订单',number:30,page:'seedOrder'},
+            {name:'同城企业订单',number:14,page:'cityOrder'},
+            {name:'特色分享商户订单',number:32,page:'specialOrder'},
+            {name:'消费者订单',number:18,page:'customerOrder'},
           ]
         }
       }
       ,
       methods:{
-
+        gotopage: function(url){
+          this.$router.push('/'+url);
+          //console.log(url);
+        }
       }
     }
 </script>
@@ -99,7 +102,7 @@
   }
 
   .demo-tabs-style1 > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab {
-    width:250%;
+    width:265%;
   }
 </style>
 
